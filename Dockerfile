@@ -131,7 +131,7 @@ RUN set -ex \
     tar \
     xz \
   \
-  && wget -O jpype.tar.gz "https://github.com/tcalmant/jpype-py3/archive/master.tar.gz" \
+  && wget -O jpype.tar.gz "https://github.com/originell/jpype/archive/master.tar.gz" \
   && mkdir /jpype \
   && tar -xvf jpype.tar.gz -C /jpype --strip-components=1 \
   && cd /jpype \
@@ -144,3 +144,4 @@ RUN set -ex \
   && apk del .build-deps \
   && rm /jpype.tar.gz \
   && rm -rf /jpype
+
